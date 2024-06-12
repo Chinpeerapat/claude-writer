@@ -33,7 +33,7 @@ if uploaded_file and question and api_key:
         prompt=prompt,
         stop_sequences=[anthropic.HUMAN_PROMPT],
         model="claude-3-opus-20240229",
-        max_tokens_to_sample=100,
+        max_tokens_to_sample=4000,
     )
     st.write("### Answer")
     st.write(response.completion)
